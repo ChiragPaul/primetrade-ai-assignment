@@ -11,4 +11,9 @@
 2026-07-01 18:20:05,429 - trading_bot - INFO - Attempting to place LIMIT order for SELL 0.01 BTCUSDT
 2026-07-01 18:20:05,611 - trading_bot - INFO - Order placed successfully. Order ID: 18238984706
 2026-07-01 18:20:50,939 - trading_bot - INFO - Successfully connected to Binance Futures Testnet.
-2026-07-01 18:20:50,939 - trading_bot - INFO - Attempting to place STOP_MARKET order for BUY 0.01 BTCUSDT
+2026-07-01 18:20:50,939 - trading_bot - INFO - Attempting to place STOP_MARKET order for BUY 0.01 BTCUSDT2026-07-01 18:32:36,734 - trading_bot - INFO - Successfully connected to Binance Futures Testnet.
+2026-07-01 18:32:36,734 - trading_bot - INFO - Attempting to place MARKET order for BUY 0.01 BTCUSDT
+2026-07-01 18:32:36,925 - trading_bot - INFO - Order placed successfully. Order ID: 18241249133
+2026-07-01 18:32:53,877 - trading_bot - INFO - Successfully connected to Binance Futures Testnet.
+2026-07-01 18:32:53,877 - trading_bot - INFO - Attempting to place LIMIT order for SELL 0.01 BTCUSDT
+2026-07-01 18:32:54,066 - trading_bot - INFO - Order placed successfully. Order ID: 18241289083

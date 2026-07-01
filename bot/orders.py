@@ -7,7 +7,7 @@ logger = setup_logger()
 def place_futures_order(client: Client, symbol: str, side: str, order_type: str, quantity: float, price: float = None):
     """
     Places an order on Binance Futures.
-    Supports MARKET, LIMIT, and STOP_MARKET.
+    Supports MARKET and LIMIT.
     """
     symbol = symbol.upper()
     side = side.upper()
@@ -25,10 +25,6 @@ def place_futures_order(client: Client, symbol: str, side: str, order_type: str,
     if order_type == 'LIMIT':
         params['timeInForce'] = 'GTC'
         params['price'] = price
-    elif order_type == 'STOP_MARKET':
-        params['stopPrice'] = price
-        # Stop Market requires either closePosition=True or a quantity. We use quantity here.
-        # Note: on Binance futures, STOP_MARKET might require additional params depending on the position.
         
     try:
         logger.debug(f"Order parameters: {params}")

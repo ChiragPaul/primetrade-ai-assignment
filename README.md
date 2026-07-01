@@ -3,7 +3,7 @@
 A simplified Python application that places orders on the Binance Futures Testnet (USDT-M). It features a clean architecture, comprehensive logging, and an enhanced Command Line Interface (CLI) using `Typer` and `Rich`.
 
 ## Features
-- **Place Orders**: Supports `MARKET`, `LIMIT`, and `STOP_MARKET` orders.
+- **Place Orders**: Supports `MARKET` and `LIMIT` orders.
 - **Support Both Sides**: `BUY` (Long) and `SELL` (Short).
 - **Validation**: Strict input validation to catch errors before making API requests.
 - **Enhanced CLI UX**: Richly formatted tables and panels for clear execution summaries.
@@ -60,11 +60,7 @@ Sell 0.01 BTCUSDT at a specific limit price (e.g., $70,000).
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 70000
 ```
 
-### Example 3: Place a STOP_MARKET Order (Bonus)
-Place a Stop Market order for 0.01 BTCUSDT at a stop price of $65,000.
-```bash
-python cli.py --symbol BTCUSDT --side BUY --type STOP_MARKET --quantity 0.01 --price 65000
-```
+
 
 ## Assumptions
 - You are trading USDT-Margined perpetual contracts (USDT-M).

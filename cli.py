@@ -17,9 +17,9 @@ logger = setup_logger()
 def place_order(
     symbol: str = typer.Option(..., "--symbol", "-s", help="Trading pair symbol, e.g., BTCUSDT"),
     side: str = typer.Option(..., "--side", help="BUY or SELL"),
-    order_type: str = typer.Option(..., "--type", "-t", help="MARKET, LIMIT, or STOP_MARKET"),
+    order_type: str = typer.Option(..., "--type", "-t", help="MARKET or LIMIT"),
     quantity: float = typer.Option(..., "--quantity", "-q", help="Order quantity in base asset"),
-    price: Optional[float] = typer.Option(None, "--price", "-p", help="Price (Required for LIMIT or STOP_MARKET)")
+    price: Optional[float] = typer.Option(None, "--price", "-p", help="Price (Required for LIMIT)")
 ):
     """
     Place a new order on the Binance Futures Testnet.
