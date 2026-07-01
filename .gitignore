@@ -7,8 +7,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Logs
-*.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
